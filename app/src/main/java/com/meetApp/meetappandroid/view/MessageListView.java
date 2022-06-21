@@ -35,12 +35,21 @@ public class MessageListView extends AppCompatActivity implements MessageListCon
     private void initializeMessageList() {
         messageList = new ArrayList<>();
         messagesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, messageList);
-        ListView lvProducts = findViewById(R.id.messages_list);
-        lvProducts.setAdapter(messagesAdapter);
+        ListView lvMessages = findViewById(R.id.messages_list);
+        lvMessages.setAdapter(messagesAdapter);
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        presenter.loadAllMessages();
     }
 
     @Override
     public void listAllMessages(List<Message> messages) {
+        messageList.clear();
+        messageList.addAll(messages);
+        messagesAdapter.notifyDataSetChanged();
 
     }
 
