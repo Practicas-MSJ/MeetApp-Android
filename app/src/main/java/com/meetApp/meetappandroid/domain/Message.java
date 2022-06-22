@@ -15,7 +15,7 @@ public class Message {
     @ColumnInfo
     private String text;
     @ColumnInfo
-    private LocalDate date;
+    private String date;
     @ColumnInfo
     private boolean favourite;
     @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
@@ -37,11 +37,12 @@ public class Message {
         this.text = text;
     }
 
-    public LocalDate getDate() {
+
+    public String getDate() {
         return date;
     }
 
-    public void setDate(LocalDate date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
@@ -61,7 +62,7 @@ public class Message {
         this.image = image;
     }
 
-    public Message(long id, String text, LocalDate date, boolean favourite, byte[] image) {
+    public Message(long id, String text, String date, boolean favourite, byte[] image) {
         this.id = id;
         this.text = text;
         this.date = date;
