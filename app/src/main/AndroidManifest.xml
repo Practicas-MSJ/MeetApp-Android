@@ -13,6 +13,10 @@
         android:theme="@style/Theme.MeetAppAndroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".view.MessageDetailView"
+            android:exported="true"/>
+
+        <activity
             android:name=".view.MessageListView"
             android:exported="true">
             <intent-filter>
