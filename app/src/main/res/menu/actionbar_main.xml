@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Settings" />
+    <item
+        android:id="@+id/events"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Events" />
+    <item
+        android:id="@+id/reminders"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Reminders" />
+    <item
+        android:id="@+id/messages"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Messages" />
+    <item
+        android:id="@+id/categories"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Categories" />
+    <item
+        android:id="@+id/favs"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Favourites" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Exit" />
+</menu>
