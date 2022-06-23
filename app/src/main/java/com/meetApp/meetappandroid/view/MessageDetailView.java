@@ -3,6 +3,7 @@ package com.meetApp.meetappandroid.view;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -25,7 +26,7 @@ public class MessageDetailView extends AppCompatActivity implements MessageDetai
 
         EditText etText = findViewById(R.id.message_text);
         EditText etDate = findViewById(R.id.message_date);
-        EditText etFavourite = findViewById(R.id.message_favourite);
+        CheckBox cbFavourite = findViewById(R.id.message_favourite);
         ImageView etImage = findViewById(R.id.message_image);
 
 
@@ -37,13 +38,14 @@ public class MessageDetailView extends AppCompatActivity implements MessageDetai
                 message = (Message) objetoEnviado.getSerializable("message");
             }
 
-            etText.setText(message.getText());
-            etDate.setText(message.getDate());
+        etText.setText(message.getText());
+        etDate.setText(message.getDate());
+        cbFavourite.setChecked(message.isFavourite());
+
 
 
 //TODO AQUI ES DONDE ME FALTA DE PASAR ESOS DOS ATRIBUTOS
 
-//            etFavourite.setText(message.);
 //        etImage.setImageBitmap(message.getImage().toString());
 
 

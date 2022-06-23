@@ -102,7 +102,7 @@ public class MessageListView extends AppCompatActivity implements MessageListCon
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Message message = messageList.get(position);//cojo la posicion en la que esta el restaurante que voy a ver el detalle
+        Message message = messageList.get(position);//cojo la posicion en la que esta el elemento que voy a ver el detalle
         //la posicion me la da el metodo
         Intent intent = new Intent(this, MessageDetailView.class);//carga la clase
 //        intent.putExtra("modify", 1);

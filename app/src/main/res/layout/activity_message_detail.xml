@@ -36,12 +36,11 @@
             android:layout_weight="1"
             android:ems="10" />
 
-        <EditText
+        <CheckBox
             android:id="@+id/message_favourite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10" />
+            android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/message_image"
