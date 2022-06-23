@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MeetAppAndroid"
+        android:theme="@style/Theme.AppCompat.DayNight"
+
         android:usesCleartextTraffic="true">
         <activity
             android:name=".view.MessageDetailView"

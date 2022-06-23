@@ -102,13 +102,8 @@ public class MessageListView extends AppCompatActivity implements MessageListCon
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        Message message = messageList.get(position);//cojo la posicion en la que esta el elemento que voy a ver el detalle
-        //la posicion me la da el metodo
+        Message message = messageList.get(position);
         Intent intent = new Intent(this, MessageDetailView.class);//carga la clase
-//        intent.putExtra("modify", 1);
-//        intent.putExtra("textMessage", message.getText());
-//        intent.putExtra("Message", message);
-        // intent.putExtra("name", restaurant.getName());//con esto le pasa valores que luego se pintan en el produc detail
 
         Bundle bundle = new Bundle();
         bundle.putSerializable("message",message);
